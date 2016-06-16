@@ -11,7 +11,7 @@ telanx/config/config.php配置:
 
     <?php
         // 配置数据库
-        $db_config = array(
+        $DB_CONFIG = array(
             'host' => 'localhost',
             'user' => 'root',
             'pwd' => 'toor'
@@ -19,7 +19,7 @@ telanx/config/config.php配置:
 
         // 此处配置访问插件服务器白名单列表
         // 如果插件服务器与代理服务器在同一台机器上，则应该加入::1和127.0.0.1
-        $whiteList = array('::1','127.0.0.1');
+        $WHITE_LIST = array('::1','127.0.0.1');
 
 ###squid配置
 * 1.myvpn.c,用户认证访问

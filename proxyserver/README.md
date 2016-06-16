@@ -2,8 +2,9 @@
 ========================
 ---
 ##服务端环境
-* 1.代理服务器Squid
-* 2.其它环境Mysql+PHP
+* 1.一台境外VPS(当然如果你想通过代理访问国内)
+* 2.代理服务器Squid
+* 3.其它环境Mysql+PHP
 
 ##接口配置
 telanx/config/config.php配置:
@@ -11,9 +12,9 @@ telanx/config/config.php配置:
     <?php
         // 配置数据库
         $db_config = array(
-            'host'=>'localhost',
-            'user'=>'root',
-            'pwd'=>'toor'
+            'host' => 'localhost',
+            'user' => 'root',
+            'pwd' => 'toor'
         );
 
         // 此处配置访问插件服务器白名单列表

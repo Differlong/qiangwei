@@ -14,4 +14,4 @@
 #后台管理系统  qwt
 基于ThinkPHP框架，自助充值，目前仅支持支付宝支付，需手动同步账号
 #服务端  telanx
-Squid proxyserver;mysql用户认证;蔷薇代理翻
+Squid proxyserver;mysql用户认证;多节点代理服务器数据同步

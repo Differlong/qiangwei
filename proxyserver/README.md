@@ -9,22 +9,23 @@
 telanx/config/config.php配置:
 
     <?php
-        // 配置数据库，访问白名单
-    $db_config = array(
-        'host'=>'localhost',
+        // 配置数据库
+        $db_config = array(
+            'host'=>'localhost',
             'user'=>'root',
-                'pwd'=>'toor'
-                    
-            );
+            'pwd'=>'toor'
+        );
 
-                // 此处配置访问插件服务器白名单列表
-                    // ::1和127.0.0.1必须放入到本地列表中
-                        $whiteList = array('::1','127.0.0.1');
+        // 此处配置访问插件服务器白名单列表
+        // 如果插件服务器与代理服务器在同一台机器上，则应该加入::1和127.0.0.1
+        $whiteList = array('::1','127.0.0.1');
 
-                        ###squid配置
-                        * 1.myvpn.c用户认证的
-                        * 2.squid配置文件，基本不用改
+###squid配置
+* 1.myvpn.c,用户认证访问
+* 2.squid配置文件，基本不用改
 
-                        ###设置定时任务清理日志
+##设置定时任务清理日志
+squid会产生大量日志，可以通过这些日志分析统计用户流量
 
-                        推荐使用国外的VPS供应商linode(非广告)
+##其它
+推荐使用国外的VPS供应商linode(非广告)
